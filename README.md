@@ -1,16 +1,56 @@
-# Introduction to Git
+# Stack Overflown
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+一款使用 HTML、CSS 和 JavaScript 製作的開發者主題瀏覽器方塊遊戲。 
+這是一個簡單的遊戲，靈感來自經典的俄羅斯方塊，但加入了程式錯誤圖案配對的元素，讓玩家在遊戲中體驗到程式開發的樂趣。
 
-Hey UUUdemo!
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+## 🚀 專案概述
 
-Remember, it's self-paced so feel free to take a break! ☕️
+此倉庫包含一款受俄羅斯方塊啟發的掉落方塊遊戲，目標是在 10×20 棋盤上，於堆疊溢出前完成指定的程式錯誤圖案配對。
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/UUUdemo/GH900-M01-0811-skills-introduction-to-git/issues/1)
+## 🧩 主要功能
 
----
+- 具備開發者主題配色的方塊風格
+- 即時掉落方塊與鍵盤操作
+- 目標錯誤圖案包括「Null Pointer」、「Memory Leak」和「Syntax Error」等
+- 配對成功會得分並清空棋盤
+- 支援暫停、軟降落和硬降落控制
+- 遊戲結束畫面會顯示最終得分
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+## 📁 專案結構
+
+- `src/index.html` — 遊戲主頁面
+- `src/style.css` — 視覺樣式與響應式佈局
+- `src/index.js` — 遊戲邏輯、繪製、輸入控制與圖案偵測
+- `src/patterns.js` — 預先定義的錯誤圖案目標
+
+## 🎮 遊戲玩法
+
+1. 在瀏覽器中開啟 `src/index.html`。
+2. 使用方向鍵移動與旋轉方塊。
+3. 按 `Space` 進行硬降落。
+4. 按 `P` 暫停或恢復遊戲。
+5. 依側邊面板顯示的目標錯誤圖案完成配對以獲得分數。
+
+## ⌨️ 操作按鍵
+
+- `←` / `→` — 左右移動
+- `↑` — 旋轉方塊
+- `↓` — 軟降落
+- `Space` — 硬降落
+- `P` — 暫停 / 繼續
+
+## 🎯 遊戲目標
+
+在棋盤上堆疊方塊，並在棋盤到達頂端前完成當前目標圖案的配對。配對成功會獲得分數並開始下一個挑戰。
+
+## 🛠️ 備註
+
+- 圖案定義在 `src/patterns.js`，為 5×5 方塊形狀。
+- 配對判定時，空白方塊與「Void Block」皆視為空格。
+- 當新方塊產生時若發生碰撞，遊戲會自動結束。
+
+## 📌 授權
+
+此專案採用 MIT License。
 
